@@ -20,7 +20,7 @@ function App() {
   }, [query]);
 
   const getTripInfo = async (searchText) => {
-    const result = await axios.get(`http://localhost:4001/trips?keywords=${searchText}`);
+    const result = await axios.get(`https://react-tourist-attraction-mini-project-fg6k.onrender.com/trips?keywords=${searchText}`);
     setTripInfo(result.data.data);
   };
 

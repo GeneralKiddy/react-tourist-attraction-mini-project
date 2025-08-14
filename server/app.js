@@ -6,7 +6,9 @@ import trips from "./db.js";
 const app = express();
 const port = 4001;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://react-tourist-attraction-mini-project.netlify.app/"  
+}));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
