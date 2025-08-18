@@ -7,7 +7,7 @@ const app = express();
 const port = 4001;
 
 app.use(cors({
-  origin: "https://react-tourist-attraction-mini-project.netlify.app/"  
+  origin: "https://react-tourist-attraction-mini-project.netlify.app"  
 }));
 app.use(bodyParser.json());
 
